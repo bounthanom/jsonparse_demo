@@ -3,7 +3,7 @@ import 'Users.dart';
 
 class Services {
   //Link of JSON
-  static const String url = 'http://jsonplaceholder.typicode.com/users';
+  static const String url = 'https://jsonplaceholder.typicode.com/users';
 
   static Future<List<User>> getUsers() async {
     try {
@@ -13,11 +13,11 @@ class Services {
         return users;
 
       } else {
-        // ignore: deprecated_member_use
+      
         return List<User>();
       }
     } catch (e) {
-      // ignore: deprecated_member_use
+      
       return List<User>();
     }
   }
